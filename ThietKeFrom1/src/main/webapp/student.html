@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Bài tập 2 - Thông tin sinh viên</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Form Nhập Thông Tin Sinh Viên</h2>
+    
+    <form action="StudentServlet" method="POST">
+        <label>Mã sinh viên:</label><br>
+        <input type="text" name="maSV" required><br><br>
+        
+        <label>Họ tên:</label><br>
+        <input type="text" name="hoTen" required><br><br>
+        
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+        
+        <label>Ngày sinh:</label><br>
+        <input type="date" name="ngaySinh" required><br><br>
+        
+        <button type="submit">Gửi dữ liệu</button>
+    </form>
+    </body>
+</html>

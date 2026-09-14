@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Bài tập 4 - Tính toán hai số</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Máy Tính Hai Số</h2>
+    
+    <form action="CalculationServlet" method="POST">
+        <label>Số a:</label><br>
+        <input type="number" step="any" name="soA" required><br><br>
+        
+        <label>Số b:</label><br>
+        <input type="number" step="any" name="soB" required><br><br>
+        
+        <label>Chọn phép toán:</label><br>
+        <select name="phepToan">
+            <option value="+">Cộng (+)</option>
+            <option value="-">Trừ (-)</option>
+            <option value="*">Nhân (*)</option>
+            <option value="/">Chia (/)</option>
+        </select><br><br>
+        
+        <button type="submit">Tính</button>
+    </form>
+    </body>
+</html>
